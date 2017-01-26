@@ -1,11 +1,18 @@
 package solutions.hedron.android_workout_app;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String EXTRA_ITEM_TITLE = "extra_item_title";
+
+    public static final String EXERCISE_WEIGHTS = "Weight Lifting";
+    public static final String EXERCISE_YOGA = "Yoga";
+    public static final String EXERCISE_CARDIO = "Cardio";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,22 +26,28 @@ public class MainActivity extends AppCompatActivity {
         weightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Load Details Activity
+                loadDetailsActivity(MainActivity.EXERCISE_WEIGHTS);
             }
         });
 
         yogaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Load Details Activity
+                loadDetailsActivity(MainActivity.EXERCISE_YOGA);
             }
         });
 
         cardioBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Load Details Activity
+                loadDetailsActivity(MainActivity.EXERCISE_CARDIO);
             }
         });
+    }
+
+    public void loadDetailsActivity(String exerciseTitle){
+        Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+        intent.putExtra(MainActivity.EXTRA_ITEM_TITLE, exerciseTitle);
+        startActivity(intent);
     }
 }

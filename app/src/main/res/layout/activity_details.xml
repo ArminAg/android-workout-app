@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_details"
     android:layout_width="match_parent"
@@ -8,6 +9,90 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="solutions.hedron.android_workout_app.DetailsActivity">
+    android:orientation="vertical"
+    tools:context="solutions.hedron.android_workout_app.DetailsActivity"
+    android:background="#2ca5f5">
 
-</RelativeLayout>
+    <TextView
+        android:text="Weight Lifting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleText"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/weight"
+        android:id="@+id/mainImage" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#20000000"
+        android:padding="15dp">
+
+        <TextView
+            android:text="Mark It Complete!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp" />
+
+        <CheckBox
+            android:text="Complete set 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox"
+            android:textColor="@android:color/white"
+            app:buttonTint="@android:color/white"
+            android:checked="false" />
+
+        <CheckBox
+            android:text="Complete set 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2"
+            android:textColor="@android:color/white"
+            app:buttonTint="@android:color/white" />
+
+        <CheckBox
+            android:text="Complete set 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox3"
+            android:textColor="@android:color/white"
+            app:buttonTint="@android:color/white" />
+
+        <CheckBox
+            android:text="Complete set 4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox4"
+            android:textColor="@android:color/white"
+            app:buttonTint="@android:color/white" />
+
+        <CheckBox
+            android:text="Complete set 5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox5"
+            android:textColor="@android:color/white"
+            app:buttonTint="@android:color/white" />
+
+        <CheckBox
+            android:text="Complete set 6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox6"
+            android:textColor="@android:color/white"
+            app:buttonTint="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
