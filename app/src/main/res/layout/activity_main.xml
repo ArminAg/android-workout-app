@@ -1,17 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingBottom="6dp"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="solutions.hedron.android_workout_app.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/weightBtn"
+        android:background="@drawable/rounded_corners"
+        android:layout_weight="1"
+        android:backgroundTint="#2ca5f5"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/weight"
+            android:id="@+id/imageView"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:text="10 sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#20000000"
+            android:padding="5dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:text="Weight Lifting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="22dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="Are you running?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="@android:color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text="30%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/yogaBtn"
+        android:background="@drawable/rounded_corners"
+        android:layout_weight="1"
+        android:backgroundTint="#916bcd"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/lotus"
+            android:id="@+id/imageView2"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:text="1 hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#20000000"
+            android:padding="5dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:text="Yoga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="22dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="Namaste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text="15%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardioBtn"
+        android:background="@drawable/rounded_corners"
+        android:layout_weight="1"
+        android:backgroundTint="#52ad56"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/heart"
+            android:id="@+id/imageView3"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:text="5 miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#20000000"
+            android:padding="5dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:text="Cardio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="22dp"
+            android:textStyle="normal|bold"
+            android:id="@+id/textView10" />
+
+        <TextView
+            android:text="Running all day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textColor="@android:color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text="22%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp" />
+
+    </RelativeLayout>
+</LinearLayout>
